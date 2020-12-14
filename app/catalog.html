@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filterStyle.css">
+    <link rel="stylesheet" href="css/catalogStyle.css">
+    <link rel="stylesheet" href="css/headerStyle.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img class="icon" src="css/iconButton/logo.svg" alt="Логотип">
+        </a>
+    </div>
+    <a href="index.html" class="inCatalog" aria-label="В каталог">
+        <button class="catalog">
+            <img class="icon" src="css/iconButton/cancel.svg" alt="Бургер">
+            <span>Каталог</span>
+        </button>
+    </a>
+    <div class="search">
+        <label for="input-search" class="label-search">
+            <input name="search" id="input-search" type="text" required>
+            <span class="placeholder"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <span class="placeholder-table-version"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <button class="button-search">
+                <span>Найти</span>
+            </button>
+        </label>
+    </div>
+    <a href="mobilMenu.html" class="inCatalog-mobile" aria-label="В каталог">
+        <button class="catalog">
+            <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+            <span>Каталог</span>
+        </button>
+    </a>
+    <nav class="nav-header">
+        <a href="#">
+            <img class="icon" src="css/iconButton/bonus.svg" alt="Бонусы">
+            <span>Бонусы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="css/iconButton/box.svg" alt="Заказы">
+            <span>Заказы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="css/iconButton/promo.svg" alt="Акции">
+            <span>Акции</span>
+        </a>
+        <a href="box/index.html" class="button-basket">
+            <img class="icon" src="css/iconButton/petHouse.svg" alt="Корзина">
+            <span>Корзина (5)</span>
+        </a>
+    </nav>
+</header>
+<aside>
+    <nav class="breadcrumb-nav">
+        <a class="breadcrumb" href="index.html" aria-label="Вернуться">Каталог товаров / Собачки</a>
+    </nav>
+    <main class="main">
+        <div class="container-catalog-button">
+            <a href="#" class="dog-button pet-buttons" aria-label="Фильтр - собачки">Собачки</a>
+            <a href="#" class="cat-button pet-buttons" aria-label="Фильтр - котики">Котики</a>
+        </div>
+        <a class="mobile-filter-open" href="mobileFilter.html" aria-label="К фильтру">
+            <p class="p-filter"><img src="css/iconButton/filter.svg" alt="Фильтр"> Фильтр</p>
+        </a>
+        <section class="base">
+            <aside class="filter item">
+                <form action="#" method="get" class="form">
+                    <h2 class="h2filter">Фильтр</h2>
+                    <div class="section-form">
+                        <h3 class="h3filter">Тип</h3>
+                        <a class="a-filter block-type" href="#">
+                            <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
+                        </a>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Охотничьи</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Компаньоны</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Декоративные</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Служебные</span>
+                        </label>
+                    </div>
+                    <div class="section-form">
+                        <h3 class="h3filter">Основные черты</h3>
+                        <a class="a-filter block-features" href="#">
+                            <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
+                        </a>
+                        <div class="fast-search-wrapper">
+                            <img class="search-icon" src="css/iconButton/search.svg" alt="Лупа">
+                            <input type="text" class="fast-search" placeholder="Быстрый поиск">
+                        </div>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Отсутствует чувство страха</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Мало линяет</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Отличное здоровье</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Хорошее послушание</span>
+                        </label>
+                        <label class="label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="text">Очень преданная</span>
+                        </label>
+                        <a href="" class="a-filter-all">Показать все</a>
+                    </div>
+                    <div class="section-form-size">
+                        <a class="block-size a-filter" href="#">
+                            <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
+                        </a>
+                        <h3 class="h3filter">Размер</h3>
+                        <label>От <input type="number" class="pet-size-input" value="11"></label>
+                        <label>до <input type="number" class="pet-size-input" value="21"></label>
+                    </div>
+                </form>
+            </aside>
+            <div class="div-items">
+                <div class="product-section item">
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-1.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Айну</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-2.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Афганская борзая</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-3.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Барбет</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-4.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Бассет</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-5.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Легавой</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-6.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Веттерхун</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-7.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Древера</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-8.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Ирландский терьер</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-9.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Амереканский кокер</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-10.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Английский Кокер</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-11.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Дункер</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="img/dog-12.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Спаниель</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-show-more">
+                    <button class="show-more"><span>Показать еще</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</aside>
+</body>
+</html>

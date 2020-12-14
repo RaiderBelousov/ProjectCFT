@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карточка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/headerStyle.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="../index.html">
+            <img class="icon" src="../css/iconButton/logo.svg" alt="Логотип">
+        </a>
+    </div>
+    <a href="../catalog.html" class="inCatalog" aria-label="В каталог">
+        <button class="catalog">
+            <img class="icon" src="../css/iconButton/threeLine.svg" alt="Бургер">
+            <span>Каталог</span>
+        </button>
+    </a>
+    <div class="search">
+        <label for="input-search" class="label-search">
+            <input name="search" id="input-search" type="text" required>
+            <span class="placeholder"><img src="../css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <span class="placeholder-table-version"><img src="../css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <button class="button-search">
+                <span>Найти</span>
+            </button>
+        </label>
+    </div>
+    <a href="../mobilMenu.html" class="inCatalog-mobile" aria-label="В каталог">
+        <button class="catalog">
+            <img class="icon" src="../css/iconButton/threeLine.svg" alt="Бургер">
+            <span>Каталог</span>
+        </button>
+    </a>
+    <nav class="nav-header">
+        <a href="#">
+            <img class="icon" src="../css/iconButton/bonus.svg" alt="Бонусы">
+            <span>Бонусы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="../css/iconButton/box.svg" alt="Заказы">
+            <span>Заказы</span>
+        </a>
+        <a href="#">
+            <img class="icon" src="../css/iconButton/promo.svg" alt="Акции">
+            <span>Акции</span>
+        </a>
+        <a href="../box/index.html" class="button-basket">
+            <img class="icon" src="../css/iconButton/petHouse.svg" alt="Корзина">
+            <span>Корзина (5)</span>
+        </a>
+    </nav>
+</header>
+<aside>
+    <nav class="breadcrumb-nav">
+        <a class="breadcrumb" href="../catalog.html" aria-label="Вернуться">Каталог товаров / Собачки / Айну</a>
+    </nav>
+    <main class="main">
+        <h1>Айну</h1>
+        <div class="opacity-border"></div>
+        <section class="base-card">
+            <div class="product-list__item">
+                <div class="img-div">
+                    <img src="../img/dog-1.png" alt="Собака 1" class="img-pet">
+                </div>
+            </div>
+            <div class="product-list__item">
+                <h2>Характеристика Айну</h2>
+                <table>
+                    <tbody>
+                    <tr class="gray">
+                        <td class="first-column">Тип</td>
+                        <td class="second-column">Охотничьи, Компаньоны</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Размер</td>
+                        <td class="second-column">Средняя (11-25кг)</td>
+                    </tr>
+                    <tr class="gray">
+                        <td class="first-column">Основные черты</td>
+                        <td class="second-column">Очень преданная, Дружелюбная, Подходит для охоты, Мало лает</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Частые заболевания</td>
+                        <td class="second-column">Глухота, Паралич гортани</td>
+                    </tr>
+                    <tr class="gray">
+                        <td class="first-column">Интеллект</td>
+                        <td class="second-column">45%</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="price-label">Стоимость</p>
+                <p class="price">12 000₽</p>
+                <div class="iteb-button-box">
+                    <button class="take"><span>Забрать</span></button>
+                    <button class="inBox"><span>Добавить в корзину</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</aside>
+</body>
+</html>
